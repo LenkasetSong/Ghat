@@ -1,8 +1,6 @@
 package websocket
 
 import (
-	"fmt"
-	"io"
 	"log"
 	"net/http"
 
@@ -25,11 +23,12 @@ func Upgrade(w http.ResponseWriter, r *http.Request) (*websocket.Conn, error) {
 	var ws, err = upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		log.Println(err)
-		return ws, err
+		return nil, err
 	}
 	return ws, nil
 }
 
+/*
 // Reader: listens for new messages being sent to our websocket endpoint
 func Reader(conn *websocket.Conn) {
 	for {
@@ -74,3 +73,4 @@ func Writer(conn *websocket.Conn) {
 		}
 	}
 }
+*/
