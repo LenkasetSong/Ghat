@@ -32,7 +32,7 @@ func setupRoutes() {
 }
 
 func main() {
-	fmt.Println("Chat App v0.0.3")
+	fmt.Println("Ghat Backend v1.0.0")
 	setupRoutes()
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
