@@ -2,6 +2,8 @@
 
 A chat application in Go with React.js.
 
+(cnblog)[https://www.cnblogs.com/4thrun/p/15470957.html]  
+
 - Easy to build
 - Provide Dockerfile 
 
